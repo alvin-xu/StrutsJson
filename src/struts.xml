@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+<!DOCTYPE struts PUBLIC   
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+    "http://struts.apache.org/dtds/struts-2.0.dtd">   
+  
+<struts>   
+  
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />   
+    <constant name="struts.devMode" value="false" />   
+  
+                                            <!-- extends 继承json-default -->   
+    <package name="default" namespace="/csdn" extends="json-default">   
+        <action name="findGood" class="cn.redarmy.action.GoodAction"  
+            method="findById">   
+            <!-- 设置返回类型为json -->   
+            <result name="success" type="json">   
+                <param name="includeProperties">   
+                   good\.id,good\.name,good\.price   
+                </param>
+            </result>   
+  
+            <result name="input">/WEB-INF/index.jsp</result>   
+        </action>   
+        <action name="listNewsGoods" class="cn.redarmy.action.GoodAction"  
+            method="findAll">   
+            <!-- 设置返回类型为json -->   
+            <result name="success" type="json">   
+                <param name="includeProperties">   
+                    goods\[\d+\]\.id,goods\[\d+\]\.name,goods\[\d+\]\.price   
+                </param>   
+            </result>   
+            <result name="input">/WEB-INF/index.jsp</result>   
+        </action>   
+            
+    </package>   
+  
+</struts>   

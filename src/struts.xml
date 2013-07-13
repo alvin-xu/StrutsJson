@@ -47,4 +47,11 @@
         </action>
     </package>
   
+    <package name="user" namespace="/user" extends="json-default">
+        <action name="login" class="cn.redarmy.action.UserAction" method="login">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+    </package>
 </struts>   

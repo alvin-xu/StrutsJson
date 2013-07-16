@@ -50,7 +50,26 @@
     <package name="user" namespace="/user" extends="json-default">
         <action name="login" class="cn.redarmy.action.UserAction" method="login">
             <result name="success" type="json">
-                <param name="root">result</param>
+                <!-- <param name="root">result</param> -->
+                <param name="includeProperties">
+                    result
+                </param>
+            </result>
+        </action>
+        <action name="register" class="cn.redarmy.action.UserAction" method="register">
+            <result name="success" type="json">
+                <param name="includeProperties">
+                    result,
+                </param>
+            </result>
+        </action>
+    </package>
+    <package name="comment" namespace="/comment" extends="json-default">
+        <action name="getComments" class="cn.redarmy.action.CommentAction" method="comments">
+            <result name="success" type="json">
+                <param name="includeProperties">
+                    result,data\[\d+\]\.commentator,data\[\d+\]\.score,data\[\d+\]\.content,data\[\d+\]\.date
+                </param>
             </result>
         </action>
     </package>

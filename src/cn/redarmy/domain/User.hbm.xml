@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.tg.entity">
+   <class name="User" table="user">
+       <id name="userName" column="username" type="java.lang.String">
+           <generator class="assigned" />
+       </id>
+       <property name="password"  column="password" type="java.lang.String"/>
+       <property name="email"  column="email" type="java.lang.String"/>
+       <property name="telephone"  column="telephone" type="java.lang.String"/>
+       <property name="nature"  column="nature" type="java.lang.Integer"/>
+       <property name="humanLandscape"  column="hl" type="java.lang.Integer"/>
+       <property name="folkCultrue"  column="fc" type="java.lang.Integer"/>
+       <property name="catering"  column="catering" type="java.lang.Integer"/>
+       <property name="historyCultrue"  column="hc" type="java.lang.Integer"/>
+       <property name="literatureArt"  column="la" type="java.lang.Integer"/>
+       <property name="countryside"  column="countryside" type="java.lang.Integer"/>
+       <property name="urbanModern"  column="um" type="java.lang.Integer"/>
+   </class>
+</hibernate-mapping>

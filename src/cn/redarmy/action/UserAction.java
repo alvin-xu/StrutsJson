@@ -11,14 +11,52 @@ public class UserAction extends ActionSupport{
 	
 	private String userName;
 	private String password;
-	private boolean result;
 	
+	private String phone;
+	private String email;
 	
-	public String Login(){
-		if(userName.equals("xubinbin")&& password.equals("111"))
+	private String result;
+	
+	public String login(){
+		if(userName.equals("xubinbin")&& password.equals("111")){
+			System.out.println("sss"+userName+password);
+			result="login-ok";
 			return SUCCESS;
-		else
+		}
+		else{
+			result="login-no";
 			return ERROR;
+		}
+	}
+   
+	public String register(){
+		//调用数据库
+		if(userName.equals("xxx")){
+			result="register-ok";
+			return SUCCESS;
+		}else{
+			result="register-no";
+			return ERROR;
+		}
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 
@@ -41,15 +79,14 @@ public class UserAction extends ActionSupport{
 		this.password = password;
 	}
 
-
-	public boolean isResult() {
+	public String getResult() {
 		return result;
 	}
 
-
-	public void setResult(boolean result) {
+	public void setResult(String result) {
 		this.result = result;
 	}
+
 
 	
 

@@ -1,23 +1,20 @@
 package cn.redarmy.domain;
 
 public class Scenery {
+
+	private String viewNo;
+	private String name;
+	private String address;
+	private String description;
+	private float playTime;            //建议游玩时间 min
+	private String businessHour;       //开放时间
+	private String traffic;
+	private String ticket;
+	private String bestHour;           //最佳旅游时节
+	private int evalNum;               //评价人数
+	private float score;               //评价均分
 	
-	private String viewNo;           //景点编号
-	private String name;             //景点名称
-	private int number;              //景点评价人数
-	private int score;               //评价均分
-	
-	/*聚类分析*/	
-	private int nature;
-	private int humanLandscape;
-	private int folkCultrue;
-	private int catering;
-	private int historyCultrue;
-	private int literatureArt;
-	private int countryside;
-	private int urbanModern;
-	
-	//Getters and Setters
+	/*Getters and Setters*/
 	public String getViewNo() {
 		return viewNo;
 	}
@@ -30,67 +27,58 @@ public class Scenery {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getNumber() {
-		return number;
+	public String getAddress() {
+		return address;
 	}
-	public void setNumber(int number) {
-		this.number = number;
+	public void setAddress(String address) {
+		this.address = address;
 	}
-	public int getScore() {
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public float getPlayTime() {
+		return playTime;
+	}
+	public void setPlayTime(float playTime) {
+		this.playTime = playTime;
+	}
+	public String getBusinessHour() {
+		return businessHour;
+	}
+	public void setBusinessHour(String businessHour) {
+		this.businessHour = businessHour;
+	}
+	public String getTraffic() {
+		return traffic;
+	}
+	public void setTraffic(String traffic) {
+		this.traffic = traffic;
+	}
+	public String getTicket() {
+		return ticket;
+	}
+	public void setTicket(String ticket) {
+		this.ticket = ticket;
+	}
+	public String getBestHour() {
+		return bestHour;
+	}
+	public void setBestHour(String bestHour) {
+		this.bestHour = bestHour;
+	}
+	public int getEvalNum() {
+		return evalNum;
+	}
+	public void setEvalNum(int evalNum) {
+		this.evalNum = evalNum;
+	}
+	public float getScore() {
 		return score;
 	}
-	public void setScore(int score) {
+	public void setScore(float score) {
 		this.score = score;
 	}
-	public int getNature() {
-		return nature;
-	}
-	public void setNature(int nature) {
-		this.nature = nature;
-	}
-	
-	public int getHumanLandscape() {
-		return humanLandscape;
-	}
-	public void setHumanLandscape(int humanLandscape) {
-		this.humanLandscape = humanLandscape;
-	}
-	public int getFolkCultrue() {
-		return folkCultrue;
-	}
-	public void setFolkCultrue(int folkCultrue) {
-		this.folkCultrue = folkCultrue;
-	}
-	public int getCatering() {
-		return catering;
-	}
-	public void setCatering(int catering) {
-		this.catering = catering;
-	}
-	public int getHistoryCultrue() {
-		return historyCultrue;
-	}
-	public void setHistoryCultrue(int historyCultrue) {
-		this.historyCultrue = historyCultrue;
-	}
-	public int getLiteratureArt() {
-		return literatureArt;
-	}
-	public void setLiteratureArt(int literatureArt) {
-		this.literatureArt = literatureArt;
-	}
-	public int getCountryside() {
-		return countryside;
-	}
-	public void setCountryside(int countryside) {
-		this.countryside = countryside;
-	}
-	public int getUrbanModern() {
-		return urbanModern;
-	}
-	public void setUrbanModern(int urbanModern) {
-		this.urbanModern = urbanModern;
-	}
-	
-	
 }

@@ -20,11 +20,11 @@ public class UserAction extends ActionSupport{
 	public String login(){
 		if(userName.equals("xubinbin")&& password.equals("111")){
 			System.out.println("sss"+userName+password);
-			result="login-ok";
+			result="success";
 			return SUCCESS;
 		}
 		else{
-			result="login-no";
+			result="fail";
 			return ERROR;
 		}
 	}
@@ -32,10 +32,10 @@ public class UserAction extends ActionSupport{
 	public String register(){
 		//调用数据库
 		if(userName.equals("xxx")){
-			result="register-ok";
+			result="success";
 			return SUCCESS;
 		}else{
-			result="register-no";
+			result="fail";
 			return ERROR;
 		}
 	}

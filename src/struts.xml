@@ -64,7 +64,15 @@
             </result>
         </action>
     </package>
-    <package name="comment" namespace="/comment" extends="json-default">
+    
+    <package name="scenery" namespace="/scenery" extends="json-default">
+        <action name="showSceneries" class="cn.redarmy.action.SceneryAction" method="showSceneries">
+            <result name="success" type="json">
+                <param name="includeProperties">
+                    result,sceneries\[\d+\]\.name,sceneries\[\d+\]\.score,sceneries\[\d+\]\.evalNum,sceneries\[\d+\]\.description
+                </param>
+            </result>
+        </action>
         <action name="getComments" class="cn.redarmy.action.CommentAction" method="comments">
             <result name="success" type="json">
                 <param name="includeProperties">

@@ -9,15 +9,8 @@ public class Comment {
 	private String commentator;   //评价人
 	private String content;       //评价内容
 	private int score;            //评价分数
-	private Date date;
+	private Date date;            //评价时间
 	
-	
-	public Date getDate() {
-		return date;
-	}
-	public void setDate(Date date) {
-		this.date = date;
-	}
 	/*Getters and Setters*/
 	public String getOrderNo() {
 		return orderNo;
@@ -48,5 +41,11 @@ public class Comment {
 	}
 	public void setScore(int score) {
 		this.score = score;
+	}
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
 	}
 }

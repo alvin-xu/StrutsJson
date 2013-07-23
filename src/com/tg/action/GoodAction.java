@@ -1,4 +1,4 @@
-package cn.redarmy.action;
+package com.tg.action;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,11 +10,11 @@ import net.sf.json.JSONObject;
 
 import org.apache.struts2.interceptor.ServletRequestAware;
 
-import cn.redarmy.domain.Good;
 import cn.redarmy.service.GoodService;
 import cn.redarmy.service.impl.GoodServiceImpl;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.tg.entity.Good;
 
 public class GoodAction extends ActionSupport implements ServletRequestAware{
 

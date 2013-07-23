@@ -3,7 +3,8 @@ package cn.redarmy.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.redarmy.domain.Good;
+import com.tg.entity.Good;
+
 import cn.redarmy.service.GoodService;
 
 public class GoodServiceImpl implements GoodService{

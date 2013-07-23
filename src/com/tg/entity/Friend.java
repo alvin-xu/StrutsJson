@@ -1,4 +1,4 @@
-package cn.redarmy.domain;
+package com.tg.entity;
 
 public class Friend {
 	

@@ -1,7 +1,8 @@
 package cn.redarmy.service;
 import java.util.List;
 
-import cn.redarmy.domain.*;
+import com.tg.entity.*;
+
 
 public interface GoodService {
 	public abstract List<Good> getNewsGood();   

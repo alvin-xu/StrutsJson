@@ -1,4 +1,4 @@
-package cn.redarmy.domain;
+package com.tg.entity;
 
 public class Scenery {
 
@@ -13,6 +13,8 @@ public class Scenery {
 	private String bestHour;           //最佳旅游时节
 	private int evalNum;               //评价人数
 	private float score;               //评价均分
+	
+	private float efficacy = 0;
 	
 	/*Getters and Setters*/
 	public String getViewNo() {
@@ -80,5 +82,11 @@ public class Scenery {
 	}
 	public void setScore(float score) {
 		this.score = score;
+	}
+	public float getEfficacy() {
+		return efficacy;
+	}
+	public void setEfficacy(float efficacy) {
+		this.efficacy = efficacy;
 	}
 }

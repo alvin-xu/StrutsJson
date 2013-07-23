@@ -1,12 +1,12 @@
-package cn.redarmy.action;
+package com.tg.action;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import cn.redarmy.domain.Comment;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.tg.entity.Comment;
 
 public class CommentAction extends ActionSupport{
 	/**

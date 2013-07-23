@@ -1,4 +1,4 @@
-package cn.redarmy.domain;
+package com.tg.entity;
 
 import java.io.Serializable;
 

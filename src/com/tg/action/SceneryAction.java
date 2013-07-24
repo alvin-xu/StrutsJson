@@ -25,7 +25,7 @@ public class SceneryAction extends ActionSupport {
 	public String sceneryDetail() {
 		System.out.println("sc_detail id="+id);
 		scenery = new Scenery();
-		scenery.setName("郑成功纪念馆");
+		scenery.setName("日光岩");
 		scenery.setAddress("思明区永春路73号");
 		scenery.setPlayTime(60);
 		scenery.setBusinessHour("8:00-17:30");

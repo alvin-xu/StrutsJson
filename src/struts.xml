@@ -9,10 +9,10 @@
     <constant name="struts.devMode" value="false" />   
   
                                             <!-- extends 继承json-default -->   
-    <package name="default" namespace="/csdn" extends="json-default">   
+<!--     <package name="default" namespace="/csdn" extends="json-default">   
         <action name="findGood" class="com.tg.action.GoodAction"  
             method="findById">   
-            <!-- 设置返回类型为json -->   
+            设置返回类型为json   
             <result name="success" type="json">   
                 <param name="includeProperties">   
                    good\.id,good\.name,good\.price   
@@ -23,7 +23,7 @@
         </action>   
         <action name="listNewsGoods" class="com.tg.action.GoodAction"  
             method="findAll">   
-            <!-- 设置返回类型为json -->   
+            设置返回类型为json   
             <result name="success" type="json">   
                 <param name="includeProperties">   
                     goods\[\d+\]\.id,goods\[\d+\]\.name,goods\[\d+\]\.price   
@@ -45,7 +45,7 @@
                 </param>
             </result>
         </action>
-    </package>
+    </package> -->
   
     <package name="user" namespace="/user" extends="json-default">
         <action name="login" class="com.tg.action.UserAction" method="login">
@@ -73,6 +73,14 @@
                 </param>
             </result>
         </action>
+        
+        <action name="scenery_detail" class="com.tg.action.SceneryAction" method="sceneryDetail">
+            <result name="success" type="json">
+                <param name="includeProperties">
+                    result,scenery\.name,scenery\.address,scenery\.description,scenery\.playTime,scenery\.businessHour,scenery\.ticket,scenery\.evalNum,scenery\.score
+                </param>
+            </result>
+        </action>
         <action name="getComments" class="com.tg.action.CommentAction" method="comments">
             <result name="success" type="json">
                 <param name="includeProperties">
@@ -80,10 +88,10 @@
                 </param>
             </result>
         </action>
-        <action name="scenery_detail" class="com.tg.action.SceneryAction" method="sceneryDetail">
+        <action name="addComment" class="com.tg.action.CommentAction" method="addComment">
             <result name="success" type="json">
                 <param name="includeProperties">
-                    result,scenery\.name,scenery\.address,scenery\.description,scenery\.playTime,scenery\.businessHour,scenery\.ticket,scenery\.evalNum,scenery\.score
+                    result
                 </param>
             </result>
         </action>
